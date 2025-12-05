@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Empresa de Cobranza de Seguros</title>
+    <link rel="stylesheet" href="StyleServicios.css">
+</head>
+<body>
+    <!-- === MENÚ SUPERIOR === -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="Imagen/logo.png" alt="Logo de la empresa">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="Home.html">Página Principal</a>
+                <a href="Nosotros.html">Quiénes Somos</a>
+                <a href="Servicios.html" class="activo">Servicios</a>
+                <a href="Contatos.html">Contacto</a>
+                <button id="modoOscuroBtn">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- === IMAGEN ILUSTRATIVA PRINCIPAL === -->
+   <section class="hero"></section>
+
+    <!-- === SECCIÓN DE SERVICIOS === -->
+    <section class="seccion-servicios">
+        <!-- SERVICIO 1 -->
+        <div class="servicio">
+            <img src="Imagen/icono-vencida.gif" alt="Cobranza Preventiva">
+            <h3>Cobranza Preventiva</h3>
+            <p>Implementamos estrategias para prevenir la morosidad y mantener la cartera de clientes al día.</p>
+            <button class="btn-detalle" data-modal="modal1">Más detalles</button>
+        </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h3>Cobranza Preventiva</h3>
+                <p>Nuestro equipo realiza seguimiento proactivo de las cuentas, recordatorios automáticos y asesoría personalizada para minimizar atrasos y mantener relaciones positivas con los clientes.</p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 2 -->
+        <div class="servicio">
+            <img src="Imagen/icono-preventiva.gif" alt="Cobranza de Cartera Vencida">
+            <h3>Cobranza de Cartera Vencida</h3>
+            <p>Gestionamos la recuperación de créditos vencidos de manera ética y profesional.</p>
+            <button class="btn-detalle" data-modal="modal2">Más detalles</button>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h3>Cobranza de Cartera Vencida</h3>
+                <p>Realizamos llamadas, notificaciones y acuerdos de pago personalizados para recuperar créditos vencidos, asegurando siempre el cumplimiento ético y legal.</p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 3 -->
+        <div class="servicio">
+            <img src="Imagen/icono-administracion.gif" alt="Administración de Cartera">
+            <h3>Administración de Cartera</h3>
+            <p>Monitoreamos y optimizamos la cartera de clientes para maximizar resultados y eficiencia.</p>
+            <button class="btn-detalle" data-modal="modal3">Más detalles</button>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h3>Administración de Cartera</h3>
+                <p>Nos encargamos de organizar, segmentar y priorizar los créditos según riesgo y antigüedad, optimizando la gestión de cada cliente para obtener mejores resultados.</p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 4 -->
+        <div class="servicio">
+            <img src="Imagen/sobre.png" alt="Notificación y Gestión de Cobranza">
+            <h3>Notificación y Gestión de Cobranza</h3>
+            <p>Nos encargamos de comunicar y gestionar cada caso con transparencia y seguimiento constante.</p>
+            <button class="btn-detalle" data-modal="modal4">Más detalles</button>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h3>Notificación y Gestión de Cobranza</h3>
+                <p>Enviamos notificaciones oportunas, realizamos llamadas de seguimiento y mantenemos un registro detallado de cada gestión, asegurando que cada deuda se gestione con profesionalismo.</p>
+            </div>
+        </div>
+
+        <!-- SERVICIO 5 -->
+        <div class="servicio">
+            <img src="Imagen/objetivo.png" alt="Campaña de Regularización de Crédito">
+            <h3>Campaña de Regularización de Crédito</h3>
+            <p>Diseñamos campañas efectivas para recuperar créditos vencidos y mejorar la relación con el cliente.</p>
+            <button class="btn-detalle" data-modal="modal5">Más detalles</button>
+        </div>
+
+        <div id="modal5" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h3>Campaña de Regularización de Crédito</h3>
+                <p>Elaboramos campañas segmentadas que incluyen recordatorios, incentivos y planes de pago, facilitando que los clientes regularicen sus cuentas de manera efectiva y amistosa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PIE DE PÁGINA === -->
+    <footer>
+        <p>© 2016 Solutions Mas Administradora, S.C.</p>
+        <div class="redes">
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">WhatsApp</a> |
+            <a href="tel:+5208331152083579">Tel: +52 08 33 11 52 08 35 79</a>
+        </div>
+    </footer>
+    <script src="JavaServicios.js"></script>
+</body>
+</html>

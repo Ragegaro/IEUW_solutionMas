@@ -1,0 +1,249 @@
+/* === MENÚ SUPERIOR === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0d3b66; /* Azul claro por defecto */
+    color: white;
+    padding: 10px 5%;
+}
+
+body.modo-oscuro header {
+    background-color: #333; /* Fondo oscuro para el header */
+}
+
+header {
+    background-color: #0d3b66; /* Azul claro por defecto */
+    color: white;
+    padding: 10px 5%;
+}
+
+body.modo-oscuro header {
+    background-color: #333; /* Fondo oscuro para el header */
+}
+body.modo-oscuro button {
+    background-color: #f4d35e; /* Amarillo para el botón */
+    color: black;
+}
+
+button {
+    background-color: #0d3b66; /* Fondo azul para el botón */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #145ca8; /* Azul más oscuro en hover */
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordes claros */
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a.activo {
+    color: #f4d35e;
+}
+
+body.modo-oscuro .menu a {
+    color: #ccc; /* Enlaces en color claro en modo oscuro */
+}
+
+body.modo-oscuro .menu a.activo {
+    color: #f4d35e; /* Amarillo para activo en modo oscuro */
+}
+
+/* === Información de contacto === */
+.info-contacto {
+    background-color: #f8f9fa;
+    padding: 30px 10%;
+    text-align: center;
+}
+
+body.modo-oscuro .info-contacto {
+    background-color: #222; /* Fondo oscuro para la sección de contacto */
+    color: #ccc; /* Texto claro */
+}
+
+.info-contacto .contactos p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+body.modo-oscuro .info-contacto .contactos p {
+    color: #bbb; /* Texto más claro en modo oscuro */
+}
+
+.info-contacto a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-contacto a:hover {
+    color: #f4d35e;
+}
+
+body.modo-oscuro .info-contacto a {
+    color: #f4d35e; /* Enlaces en amarillo en modo oscuro */
+}
+
+/* === Mapa === */
+.mapa {
+    margin: 40px 0;
+    width: 100%;
+}
+
+/* === Visión, Misión, Filosofía/Valores === */
+.valores-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 8%;
+    gap: 20px;
+}
+
+body.modo-oscuro .valores-seccion {
+    background-color: #333; /* Fondo oscuro para la sección */
+}
+
+.valor {
+    flex: 1 1 250px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.modo-oscuro .valor {
+    background-color: #444; /* Fondo oscuro para los bloques */
+    border-color: #555; /* Bordes más oscuros */
+    color: #ccc; /* Texto claro */
+}
+
+.valor h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+body.modo-oscuro .valor h3 {
+    color: #f4d35e; /* Títulos en amarillo */
+}
+
+.valor p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+body.modo-oscuro .valor p {
+    color: #bbb; /* Párrafos más claros en modo oscuro */
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body.modo-oscuro footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+}
+
+footer .redes {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #f4d35e;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.modo-oscuro footer a {
+    color: #f4d35e; /* Enlaces en amarillo en modo oscuro */
+}
+
+body.modo-oscuro footer a:hover {
+    color: #fff; /* Enlaces en blanco en hover */
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .valores-seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+     nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+}
+
+body.modo-oscuro .menu a {
+    color: #ccc; /* Enlaces en color claro en modo oscuro */
+}
+
+body.modo-oscuro .menu a:hover {
+    color: #f4d35e; /* Amarillo para hover */
+}
+
+body.modo-oscuro .valor {
+    background-color: #444; /* Fondo oscuro para los bloques en modo oscuro */
+    color: #ccc; /* Texto claro */
+}
+
+body.modo-oscuro .info-contacto {
+    background-color: #222; /* Fondo oscuro para la sección de contacto */
+    color: #ccc; /* Texto claro */
+}

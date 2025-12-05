@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Cobranza de Seguros</title>
+    <link rel="stylesheet" href="StyleHome.css">
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="logo">
+            <a href="Home.html">
+                <img src="Imagen/logo.png"  alt="Logo de la empresa">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="Home.html">Página Principal</a>
+            <a href="Nosotros.html">Quiénes Somos</a>
+            <a href="Servicios.html">Servicios</a>
+            <a href="Contatos.html">Contacto</a>
+            <!-- Botón de modo oscuro -->
+            <button id="modoOscuroBtn">🌙</button>
+        </div>
+    </nav>
+    </header>
+
+    <section class="hero"></section>
+
+    <section class="contenido">
+        <div class="info-empresa">
+            <h2>Tu Aliado en Cobranza de Seguros</h2>
+            <h3>¿Qué hacemos?</h3>
+            <p>
+                Dedicada a la prestación de servicios integrales para la recuperación de cartera vencida extrajudicial y judicial en materia hipotecaria y comercial.
+            </p>
+            <h3>Experiencia</h3>
+            <p>
+                Somos una empresa que brinda servicios de recuperación de cartera desde el 2008, contamos con personal preparado y certificado que nos permite brindar un servicio y una atención especializada al crédito.
+            </p>
+        </div>
+
+        <div class="formulario-contacto">
+            <h3>Contáctanos</h3>
+            <form id="contactForm" method="POST" action="/enviar">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <div class="mensaje-exito" id="mensajeExito">
+                ¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2016 Solutions Mas Administradora, S.C.</p>
+        <div class="redes">
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">WhatsApp</a> |
+            <a href="tel:+5208331152083579">Tel: +52 08 33 11 52 08 35 79</a>
+        </div>
+    </footer>
+
+    <script src="JavaHome.js"></script>
+</body>
+</html>

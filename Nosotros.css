@@ -1,0 +1,254 @@
+/* ===== MENÚ SUPERIOR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0d3b66; /* Azul claro por defecto */
+    color: white;
+    padding: 10px 5%;
+}
+
+body.modo-oscuro header {
+    background-color: #333; /* Fondo oscuro para el header */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: #f4d35e; /* Amarillo para hover */
+}
+
+body.modo-oscuro .menu a {
+    color: #ccc; /* Color claro para enlaces en modo oscuro */
+}
+
+body.modo-oscuro .menu a:hover,
+body.modo-oscuro .menu a.activo {
+    color: #f4d35e; /* Amarillo para hover */
+}
+
+/* ===== CARTA DE PRESENTACIÓN ===== */
+.presentacion {
+    background-color: #ffffff;
+    padding: 80px 10%;
+}
+
+body.modo-oscuro .presentacion {
+    background-color: #222; /* Fondo oscuro para la carta de presentación */
+}
+
+.contenido-presentacion {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.7;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+body.modo-oscuro .contenido-presentacion {
+    color: #ccc; /* Texto claro en el modo oscuro */
+}
+
+body.modo-oscuro .contenido-presentacion h1,
+body.modo-oscuro .contenido-presentacion h2 {
+    color: #f4d35e; /* Títulos en amarillo */
+}
+
+body.modo-oscuro .contenido-presentacion p,
+body.modo-oscuro .contenido-presentacion ul li {
+    color: #bbb; /* Color de texto más claro para los párrafos y listas */
+}
+
+/* ===== SECCIÓN POLÍTICAS, OBJETIVOS Y VALORES ===== */
+.seccion-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 8%;
+    background-color: #f8f9fa;
+}
+
+body.modo-oscuro .seccion-info {
+    background-color: #333; /* Fondo oscuro para la sección */
+}
+
+.bloque {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.modo-oscuro .bloque {
+    background-color: #444; /* Fondo oscuro para los bloques */
+    border-color: #555; /* Bordes más oscuros */
+    color: #ccc; /* Texto claro */
+}
+
+.bloque:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body.modo-oscuro .bloque:hover {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra más clara en el modo oscuro */
+}
+
+.bloque h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+body.modo-oscuro .bloque h2 {
+    color: #f4d35e; /* Títulos en amarillo en modo oscuro */
+}
+
+.bloque p {
+    font-size: 15px;
+    color: #555;
+}
+
+body.modo-oscuro .bloque p {
+    color: #ccc; /* Párrafos más claros en modo oscuro */
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body.modo-oscuro footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+}
+
+footer .redes {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #f4d35e;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.modo-oscuro footer a {
+    color: #f4d35e; /* Enlaces en amarillo en modo oscuro */
+}
+
+body.modo-oscuro footer a:hover {
+    color: #fff; /* Enlaces en blanco en hover */
+}
+
+button {
+    background-color: #0d3b66; /* Fondo azul para el botón */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #145ca8; /* Azul más oscuro en hover */
+}
+
+body.modo-oscuro button {
+    background-color: #f4d35e; /* Amarillo para el botón */
+    color: black;
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordes claros */
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .seccion-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-presentacion {
+        padding: 20px;
+    }
+
+    .contenido-presentacion h1 {
+        font-size: 28px;
+    }
+
+    .contenido-presentacion h2 {
+        font-size: 22px;
+    }
+     nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+}
+
+body.modo-oscuro .contenido-presentacion h1,
+body.modo-oscuro .contenido-presentacion h2 {
+    color: #f4d35e; /* Títulos en amarillo */
+}
+
+body.modo-oscuro .menu a {
+    color: #ccc; /* Enlaces en color claro en modo oscuro */
+}
+
+
+
+body.modo-oscuro .menu a:hover,
+body.modo-oscuro .menu a.activo {
+    color: #f4d35e; /* Amarillo para hover en modo oscuro */
+}

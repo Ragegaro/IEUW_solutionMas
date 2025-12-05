@@ -1,0 +1,306 @@
+/* ===== MENÚ SUPERIOR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0d3b66; /* Azul claro por defecto */
+    color: white;
+    padding: 10px 5%;
+}
+
+body.modo-oscuro header {
+    background-color: #333; /* Fondo oscuro para el header */
+}
+button {
+    background-color: #0d3b66; /* Fondo azul para el botón */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #145ca8; /* Azul más oscuro en hover */
+}
+
+body.modo-oscuro button {
+    background-color: #f4d35e; /* Amarillo para el botón */
+    color: black;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: #f4d35e; /* Amarillo para hover y activo */
+}
+
+body.modo-oscuro .menu a {
+    color: #ccc; /* Enlaces en color claro en modo oscuro */
+}
+
+body.modo-oscuro .menu a:hover,
+body.modo-oscuro .menu a.activo {
+    color: #f4d35e; /* Amarillo para hover y activo en modo oscuro */
+}
+
+/* ===== IMAGEN PRINCIPAL ===== */
+.hero {
+    width: 100%;
+    height: 400px;
+    background-image: url('Imagen/Reunion.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ===== SECCIÓN DE SERVICIOS ===== */
+.seccion-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 8%;
+    background-color: #f8f9fa;
+}
+
+body.modo-oscuro .seccion-servicios {
+    background-color: #333; /* Fondo oscuro para la sección de servicios */
+}
+
+.servicio {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.modo-oscuro .servicio {
+    background-color: #444; /* Fondo oscuro para los servicios */
+    border-color: #555; /* Bordes más oscuros */
+    color: #ccc; /* Texto claro */
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body.modo-oscuro .servicio:hover {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra más clara en modo oscuro */
+}
+
+.servicio img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+body.modo-oscuro .servicio img {
+    filter: brightness(0.8); /* Reduce el brillo de las imágenes en modo oscuro */
+}
+
+.servicio h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+body.modo-oscuro .servicio h3 {
+    color: #f4d35e; /* Títulos en amarillo */
+}
+
+.servicio p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+body.modo-oscuro .servicio p {
+    color: #bbb; /* Texto claro en modo oscuro */
+}
+
+.btn-detalle {
+    background-color: #0d3b66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.modo-oscuro .btn-detalle {
+    background-color: #555; /* Fondo más oscuro para el botón en modo oscuro */
+    color: #ccc; /* Texto claro */
+}
+
+.btn-detalle:hover {
+    background-color: #f4d35e;
+    color: #0d3b66;
+}
+
+body.modo-oscuro .btn-detalle:hover {
+    background-color: #f4d35e; /* Amarillo al pasar el cursor */
+    color: #333; /* Texto oscuro para contraste */
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background-color: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body.modo-oscuro footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+}
+
+footer .redes {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #f4d35e;
+    text-decoration: none;
+    margin: 0 10px;
+}
+button {
+    background-color: #0d3b66; /* Fondo azul para el botón */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #145ca8; /* Azul más oscuro en hover */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.modo-oscuro footer a {
+    color: #f4d35e; /* Enlaces en amarillo en modo oscuro */
+}
+
+body.modo-oscuro footer a:hover {
+    color: #fff; /* Enlaces en blanco al pasar el cursor */
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .seccion-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+     nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+}
+
+/* ===== MODAL ===== */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+body.modo-oscuro .modal {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro más pronunciado para el modal */
+}
+
+.modal-contenido {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+body.modo-oscuro .modal-contenido {
+    background-color: #444; /* Fondo oscuro para el contenido del modal */
+    color: #ccc; /* Texto claro dentro del modal */
+}
+
+.cerrar {
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+body.modo-oscuro .cerrar {
+    color: #ccc; /* Color del botón de cerrar en modo oscuro */
+}
+
+.cerrar:hover {
+    color: #f4d35e;
+}
+
+body.modo-oscuro .cerrar:hover {
+    color: #fff; /* Botón de cerrar en blanco al pasar el cursor */
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordes claros */
+    border-radius: 20px;
+    font-size: 1rem;
+}

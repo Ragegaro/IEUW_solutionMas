@@ -1,0 +1,254 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Fondo claro */
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Estilos para el modo oscuro */
+body.modo-oscuro {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ccc; /* Texto claro */
+}
+
+body.modo-oscuro h1, body.modo-oscuro h2, body.modo-oscuro h3, body.modo-oscuro h4, body.modo-oscuro h5, body.modo-oscuro h6 {
+    color: #ffffff; /* Encabezados en blanco */
+}
+
+body.modo-oscuro header {
+    background-color: #333; /* Fondo oscuro para el header */
+}
+
+body.modo-oscuro .contenido {
+    background-color: #1f1f1f; /* Fondo oscuro para contenido */
+}
+
+body.modo-oscuro .formulario-contacto {
+    background-color: #333; /* Fondo oscuro para formulario */
+}
+
+body.modo-oscuro input, body.modo-oscuro textarea, body.modo-oscuro button {
+    background-color: #222; /* Fondo oscuro para inputs */
+    color: #ccc; /* Color claro para texto en inputs */
+    border: 1px solid #555; /* Bordes oscuros */
+}
+
+body.modo-oscuro button {
+    background-color: #f4d35e; /* Amarillo para el botón */
+    color: black;
+}
+
+body.modo-oscuro footer {
+    background-color: #333; /* Fondo oscuro para el footer */
+}
+
+body.modo-oscuro .menu a {
+    color: white; /* Enlaces en blanco en el modo oscuro */
+}
+
+body.modo-oscuro nav a {
+    color: white; /* Enlaces en blanco */
+}
+
+body.modo-oscuro .mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+body.modo-oscuro .logo img {
+    filter: brightness(0.7); /* Imagen con brillo reducido en modo oscuro */
+}
+
+/* Estilos comunes */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p, input, textarea, button, a, label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header {
+    background-color: #0d3b66; /* Fondo azul claro para el header en modo claro */
+    color: white;
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f4d35e; /* Amarillo para hover */
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background-image: url('Imagen/Imghome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: white; /* Fondo blanco para contenido */
+}
+
+.info-empresa {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 40px;
+}
+
+.info-empresa h2 {
+    color: #0d3b66; /* Color azul para títulos de la empresa */
+    margin-bottom: 15px;
+}
+
+.info-empresa p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.formulario-contacto {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f1f3f5; /* Fondo claro para formulario */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario-contacto h3 {
+    margin-bottom: 15px;
+    color: #0d3b66; /* Azul para el título del formulario */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordes claros */
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #0d3b66; /* Fondo azul para el botón */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #145ca8; /* Azul más oscuro en hover */
+}
+
+.mensaje-exito {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+}
+
+footer {
+    background-color: #0d3b66; /* Azul para footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .redes {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #f4d35e; /* Amarillo para enlaces */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    height: 90px;
+    width: auto;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f4d35e; /* Amarillo para hover */
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+}
